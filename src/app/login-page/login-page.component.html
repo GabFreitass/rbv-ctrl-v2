@@ -1,0 +1,13 @@
+<article>
+  <section>
+    <form [formGroup]="loginForm" (submit)="onLoginSubmit()">
+      <label for="email">Email</label>
+      <input type="text" id="email" formControlName="email" />
+
+      <label for="password">Password</label>
+      <input type="text" id="password" formControlName="password" />
+
+      <button type="submit">Login</button>
+    </form>
+  </section>
+</article>
